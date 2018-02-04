@@ -1,0 +1,97 @@
+﻿<include>
+
+      <tabctrl pos="0,0,-0,-0" animateSteps="10" animateType="1" curSel="0" colorBkgnd="#ffffff" tabAlign="top" tabSkin="skin_tab_left" tabInterSkin="skin_tab_left_splitter" tabInterSize="2" tabHeight="30" tabWidth="120"  colorText="#000000bb">
+        
+        <page title="mclistview">
+          <mclistview name="mclv_test" colorBkgnd="@color/white" pos="10,10,-10,-10" headerHeight="30">
+            <header align="center"  sortSkin="skin_lcex_header_arrow" itemSkin="skin_lcex_header" itemSwapEnable="1" fixWidth="0" font="underline:0,adding:-3" sortHeader="1" colorBkgnd="#ffffff" >
+              <items>
+                <item width="480">@string/mccol_1</item>
+                <item width="95">@string/mccol_2</item>
+                <item width="100">@string/mccol_3</item>
+                <item width="100">@string/mccol_4</item>
+                <item width="100">@string/mccol_5</item>
+                <item width="100">@string/mccol_6</item>
+              </items>
+            </header>
+            <template itemHeight="80" colorHover="#cccccc" colorSelected="#0000ff">
+              <window name="col1" clipClient="1">
+                <img name="img_icon" skin="skin_icon6" pos="10,8,@64,@64"/>
+                <text name="txt_name" pos="[5,16" font="bold:1,adding:-1">火狐浏览器</text>
+                <text name="txt_desc" pos="{0,36,-10,-10" font="bold:1,adding:-4" dotted="1">速度最快的浏览器</text>
+                <text name="txt_index" pos="|0,|0" offset="-0.5,-0.5" font="adding:10" colorText="#ff000088">10</text>
+              </window>
+              <window name="col2" clipClient="1">
+                <ratingbar name="rating_score" starSkin="skin_star1" starNum="5" value="3.5" pos="10,16"  />
+                <text name="txt_score" pos="10,36" font="adding:-5"  >8.5分</text>
+                <link pos="[5,36" cursor="hand" colorText="#1e78d5" href="www.163.com" font="adding:-5" >投票</link>
+              </window>
+              <window name="col3" clipClient="1">
+                <text name="txt_size" pos="0,26,-0,-26" font="adding:-4" align="center" >85.92M</text>
+              </window>
+              <window  name="col4" clipClient="1">
+                <text name="txt_installtime" pos="0,26,-0,-26" font="adding:-4" align="center" >2015-01-09</text>
+              </window>
+              <window name="col5" clipClient="1">
+                <text name="txt_usetime" pos="0,26,-0,-26" font="adding:-4" align="center" >今天</text>
+                <animateimg pos="|0,|0" offset="-0.5,-0.5" skin="skin_busy" name="ani_test" tip="animateimg is used here" msgTransparent="0" />
+              </window>
+              <window name="col6" clipClient="1">
+                <imgbtn animate="1"  pos="|-35,|-14" font="adding:-3" align="center" skin="skin_install" name="btn_uninstall">卸载</imgbtn>
+              </window>
+            </template>
+
+          </mclistview>
+        </page>
+        
+        
+        
+        <page title="mclistviewex">
+          <mclistviewex name="musiclist" headerHeight="48" colorSwapLine="rgb(0,0,255)" colorDropBk="rgb(0,0,255)" pos="20,20,-20,-20" sbTop="48">
+            <header2 align="center" matchParent="1" sortSkin="skin_lcex_header_arrow" itemSkin="skin_lcex_header" cursor="hand" itemSwapEnable="1" sortHeader="0" colorText="#000000ff">
+              <items>
+                <item width="150">歌曲</item>
+                <item width="120">歌手</item>
+                <item width="120">专辑</item>
+                <item width="120">时长</item>
+              </items>
+            </header2>
+            <template itemHeight="48" colorHover="#666666" colorSelected="#555555" fond="adding:-4">
+              <window name="col1" clipClient="1">
+                <hr pos="0,0,-0,1" colorLine="#666666" />
+                <text name="songname" dotted="1" pos="5,|,]-30,-0" offset="0,-0.5" font="bold:1,adding:-1">天天想听</text>
+                <window pos="-0,|" name="playbtn" offset="-1.2,-0.5" display="0" show="0">
+                  <!--imgbtn name="btn_play" pos="0,|" offset="0,-0.5" skin="skin_btn_play" show="1" tip="播放" />
+                  <imgbtn name="btn_add" pos="[4,|" offset="0,-0.5" skin="skin_btn_add" show="1" tip="添加音乐" />
+                  <imgbtn name="btn_down" pos="[4,|" offset="0,-0.5" skin="skin_btn_down" show="1" tip="下载音乐" />
+                  <imgbtn name="btn_more" pos="[4,|" offset="0,-0.5" skin="skin_btn_more" show="1" tip="更多" /-->
+                </window>
+              </window>
+              <window name="col2" clipClient="1">
+                <hr pos="0,0,-0,1" colorLine="#666666" />
+                <text name="artist">卖炭翁</text>
+              </window>
+              <window name="col3" clipClient="1">
+                <hr pos="0,0,-0,1" colorLine="#666666" />
+                <text name="album" >SOUI就是棒</text>
+              </window>
+              <window name="col4" clipClient="1">
+                <hr pos="0,0,-0,1" colorLine="#666666" />
+                <text name="lasttime" pos="0,|" offset="0,-0.5" colorText="rgb(100,100,100)">00:00</text>
+              </window>
+            </template>
+          </mclistviewex>
+        </page>
+      </tabctrl>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+</include>
